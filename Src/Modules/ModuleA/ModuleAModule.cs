@@ -24,8 +24,6 @@ namespace ModuleA
             IRegion region = regionManager.Regions[RegionNames.BreadcrumbRegion];
             region.Add(container.Resolve<ToolbarView>());
             region.Add(container.Resolve<ToolbarView>());
-            region.Add(container.Resolve<ToolbarView>());
-            region.Add(container.Resolve<ToolbarView>());
 
             regionManager.RegisterViewWithRegion(RegionNames.BreadcrumbRegion, typeof(ToolbarView));
             regionManager.RegisterViewWithRegion(RegionNames.ContentRegion, typeof(ContentView));

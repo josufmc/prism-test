@@ -6,7 +6,7 @@
         xmlns:inf="clr-namespace:PrismTest1.Infrastructure;assembly=PrismTest1.Infrastructure"
         Title="{Binding Title}" Height="350" Width="525">
     <DockPanel LastChildFill="True">
-        <ContentControl DockPanel.Dock="Top" prism:RegionManager.RegionName="{x:Static inf:RegionNames.ToolbarRegion}" />
+        <StackPanel Orientation="Horizontal" DockPanel.Dock="Top" prism:RegionManager.RegionName="{x:Static inf:RegionNames.ToolbarRegion}" />
         <ItemsControl DockPanel.Dock="Top" prism:RegionManager.RegionName="{x:Static inf:RegionNames.BreadcrumbRegion}"/>
         <ContentControl prism:RegionManager.RegionName="{x:Static inf:RegionNames.ContentRegion}" />
     </DockPanel>
