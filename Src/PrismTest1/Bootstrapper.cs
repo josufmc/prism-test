@@ -3,6 +3,7 @@ using System.Windows;
 using Prism.Modularity;
 using Microsoft.Practices.Unity;
 using Prism.Unity;
+using ModuleA;
 
 namespace PrismTest1
 {
@@ -21,7 +22,7 @@ namespace PrismTest1
         protected override void ConfigureModuleCatalog()
         {
             var moduleCatalog = (ModuleCatalog)ModuleCatalog;
-            //moduleCatalog.AddModule(typeof(YOUR_MODULE));
+            moduleCatalog.AddModule(typeof(ModuleAModule));
         }
 
     }
