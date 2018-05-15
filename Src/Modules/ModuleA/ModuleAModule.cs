@@ -5,6 +5,7 @@ using PrismTest1.Infrastructure;
 
 namespace ModuleA
 {
+    [Module(ModuleName ="ModuleA", OnDemand =true)]
     public class ModuleAModule : IModule
     {
         private readonly IUnityContainer container;
