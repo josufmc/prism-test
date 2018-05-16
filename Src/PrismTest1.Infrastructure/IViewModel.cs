@@ -8,6 +8,5 @@ namespace PrismTest1.Infrastructure
 {
     public interface IViewModel
     {
-        IView View { get; set; }
     }
 }
