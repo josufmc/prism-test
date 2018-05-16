@@ -20,13 +20,11 @@ namespace ModuleA
 
         public void Initialize()
         {
+            container.RegisterType<ToolbarView>();
+            container.RegisterType<IContentAView, ContentView>();
+            container.RegisterType<IContentAViewModel, ContentAViewModel>();
+
             regionManager.RegisterViewWithRegion(RegionNames.ToolbarRegion, typeof(ToolbarView));
-
-            IRegion region = regionManager.Regions[RegionNames.BreadcrumbRegion];
-            region.Add(container.Resolve<ToolbarView>());
-            region.Add(container.Resolve<ToolbarView>());
-
-            regionManager.RegisterViewWithRegion(RegionNames.BreadcrumbRegion, typeof(ToolbarView));
             regionManager.RegisterViewWithRegion(RegionNames.ContentRegion, typeof(ContentView));
         }
     }

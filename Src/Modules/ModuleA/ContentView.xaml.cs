@@ -12,17 +12,20 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using PrismTest1.Infrastructure;
 
 namespace ModuleA
 {
     /// <summary>
     /// Interaction logic for ContentView.xaml
     /// </summary>
-    public partial class ContentView : UserControl
+    public partial class ContentView : UserControl, IContentAView
     {
         public ContentView()
         {
             InitializeComponent();
         }
+
+        public IViewModel ViewModel { get => (IContentAViewModel)DataContext; set => DataContext = value; }
     }
 }

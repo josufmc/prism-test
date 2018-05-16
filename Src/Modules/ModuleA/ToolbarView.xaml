@@ -6,5 +6,5 @@
              xmlns:local="clr-namespace:ModuleA"
              mc:Ignorable="d" 
              d:DesignHeight="300" d:DesignWidth="300">
-    <Button Content="ToolbarItem"/>
+    <Button Content="ToolbarA"/>
 </UserControl>

@@ -82,6 +82,8 @@
     <Compile Include="ContentView.xaml.cs">
       <DependentUpon>ContentView.xaml</DependentUpon>
     </Compile>
+    <Compile Include="IContentAViewModel.cs" />
+    <Compile Include="IContentAView.cs" />
     <Compile Include="ModuleAModule.cs" />
     <Compile Include="ToolbarView.xaml.cs">
       <DependentUpon>ToolbarView.xaml</DependentUpon>
