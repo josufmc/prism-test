@@ -9,6 +9,7 @@ namespace PrismTest1.Infrastructure
     public static class RegionNames
     {
         public const string ToolbarRegion = "ToolbarRegion";
+        public const string StatusBarRegion = "StatusBarRegion";
         public const string BreadcrumbRegion = "BreadcrumbRegion";
         public const string ContentRegion = "ContentRegion";
     }

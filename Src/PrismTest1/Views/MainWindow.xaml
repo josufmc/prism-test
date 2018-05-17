@@ -4,10 +4,9 @@
         xmlns:prism="http://prismlibrary.com/"
         prism:ViewModelLocator.AutoWireViewModel="True"
         xmlns:inf="clr-namespace:PrismTest1.Infrastructure;assembly=PrismTest1.Infrastructure"
-        Title="{Binding Title}" Height="350" Width="525">
+        Title="{Binding Title}" Height="350" Width="350">
     <DockPanel LastChildFill="True">
-        <StackPanel Orientation="Horizontal" DockPanel.Dock="Top" prism:RegionManager.RegionName="{x:Static inf:RegionNames.ToolbarRegion}" />
-        <ItemsControl DockPanel.Dock="Top" prism:RegionManager.RegionName="{x:Static inf:RegionNames.BreadcrumbRegion}"/>
+        <ContentControl prism:RegionManager.RegionName="{x:Static inf:RegionNames.StatusBarRegion}" DockPanel.Dock="Top" />
         <ContentControl prism:RegionManager.RegionName="{x:Static inf:RegionNames.ContentRegion}" />
     </DockPanel>
 </Window>

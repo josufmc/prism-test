@@ -5,10 +5,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ModuleA
+namespace PrismTest1.People.Views
 {
-    public interface IContentAViewModel: IViewModel
+    public interface IPersonView : IView
     {
-        string Message { get; set; }
+
     }
 }

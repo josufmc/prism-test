@@ -1,4 +1,6 @@
-﻿using System;
+﻿using PrismTest1.Infrastructure;
+using PrismTest1.People.ViewModels;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -12,20 +14,23 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
-using PrismTest1.Infrastructure;
 
-namespace ModuleA
+namespace PrismTest1.People.Views
 {
     /// <summary>
-    /// Interaction logic for ContentView.xaml
+    /// Interaction logic for PersonView.xaml
     /// </summary>
-    public partial class ContentView : UserControl, IContentAView
+    public partial class PersonView : UserControl, IPersonView
     {
-        public ContentView()
+        public PersonView()
         {
             InitializeComponent();
         }
 
-        public IViewModel ViewModel { get => (IViewModel)DataContext; set => DataContext = value; }
+        public IViewModel ViewModel
+        {
+            get { return (IViewModel)DataContext; }
+            set { DataContext = value; }
+        }
     }
 }

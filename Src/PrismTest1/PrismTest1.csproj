@@ -70,10 +70,6 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Page Include="XamlCatalog.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs">
@@ -103,9 +99,9 @@
     <PackageReference Include="Prism.Unity" Version="6.3.0" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Modules\ModuleA\ModuleA.csproj">
-      <Project>{b8425ecc-ae59-488d-9f40-721dd983e7ea}</Project>
-      <Name>ModuleA</Name>
+    <ProjectReference Include="..\Modules\PrismTest1.People\PrismTest1.People.csproj">
+      <Project>{fcec8eee-6828-4a63-9cfd-6e396c606b72}</Project>
+      <Name>PrismTest1.People</Name>
     </ProjectReference>
     <ProjectReference Include="..\PrismTest1.Infrastructure\PrismTest1.Infrastructure.csproj">
       <Project>{c7a38423-a473-4ac2-b853-2b773dcf2bb8}</Project>
