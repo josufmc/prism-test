@@ -21,10 +21,9 @@ namespace ModuleA
     /// </summary>
     public partial class ContentView : UserControl, IContentAView
     {
-        public ContentView(IContentAViewModel viewModel)
+        public ContentView()
         {
             InitializeComponent();
-            ViewModel = viewModel;
         }
 
         public IViewModel ViewModel { get => (IViewModel)DataContext; set => DataContext = value; }

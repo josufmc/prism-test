@@ -9,9 +9,13 @@ namespace ModuleA
 {
     public class ContentAViewModel : IContentAViewModel
     {
-        public ContentAViewModel()
+        public ContentAViewModel(IContentAView view)
         {
-
+            View = view;
+            View.ViewModel = this;
         }
+
+        public string Message { get; set; }
+        public IView View { get; set; }
     }
 }

@@ -26,7 +26,7 @@ namespace PrismTest1
         protected override void ConfigureModuleCatalog()
         {
             var moduleCatalog = (ModuleCatalog)ModuleCatalog;
-            //moduleCatalog.AddModule(typeof(ModuleAModule));
+            moduleCatalog.AddModule(typeof(ModuleAModule));
 
 
             //Type moduleAType = typeof(ModuleAModule);

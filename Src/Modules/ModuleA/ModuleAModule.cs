@@ -25,7 +25,20 @@ namespace ModuleA
             container.RegisterType<IContentAViewModel, ContentAViewModel>();
 
             regionManager.RegisterViewWithRegion(RegionNames.ToolbarRegion, typeof(ToolbarView));
-            regionManager.RegisterViewWithRegion(RegionNames.ContentRegion, typeof(ContentView));
+
+            var vm = container.Resolve<IContentAViewModel>();
+            vm.Message = "First view";
+            IRegion region = regionManager.Regions[RegionNames.ContentRegion];
+            region.Add(vm.View);
+            region.Deactivate(vm.View);
+
+            var vm2 = container.Resolve<IContentAViewModel>();
+            vm2.Message = "Second view";
+            region.Add(vm2.View);
+
+
+
+            //regionManager.RegisterViewWithRegion(RegionNames.ContentRegion, typeof(ContentView));
         }
     }
 }
